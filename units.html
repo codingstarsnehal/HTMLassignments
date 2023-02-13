@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units of measurement</title>
+    <style>
+        /* ul li{
+            font-weight: bold;
+            color: blue;
+        }
+        ul li:nth-child(1){
+            font-weight: bold;
+            color: red;
+        } */
+       
+       div{
+            border: 2px solid black;
+        }
+        h1{
+            color: greenyellow;
+        }
+        fieldset{
+            margin: 5px;
+        }
+        ul li{
+            font-weight: bold;
+        }
+        ul li p{
+            font-weight: lighter;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Units of measurement</h1>
+    <ul>
+        <li class="one">relative units:
+            <p>Based on size of somthing or parent</p>
+            <p>px,em,rem,vh,vm,vw</p>
+        </li>
+        <li class="one">absolute units:
+            <p>Real world equivelent</p>
+            <p>px,pt ,mm,cm,in</p>
+        </li>
+    </ul>
+    <h1 style="background-color: blue;">em and rem difference</h1>
+    <h1 style="color: greenyellow;">em with parent size</h1>
+    <div style="font-size: 20px;">
+        <p>A simple para with parent size 20px</p>
+        <p style="font-size: 1em;">A para with 1em
+        <p style="font-size: 1em;">grand child para with 1em</p>
+        <p style="font-size: 1.25em;">A para with 1.25em</p>
+        <p style="font-size: 1.5em;">A para with 1.5em</p>
+        <!-- <p style="font-size: 0.5em;">A para with 0.5em</p> -->
+    </div>
+    <div style="font-size: 20px;">
+        <p>A simple negative size para with parent size 20px</p>
+        <p style="font-size: -1em;">A para with -1em</p>
+        <p style="font-size: -1.25em;">A para with -1.25em</p>
+        <p style="font-size: -1.5em;">A para with -1.5em</p>
+        <!-- <p style="font-size: 0.5em;">A para with 0.5em</p> -->
+    </div>
+    <h1 style="color: greenyellow;">em without parent size</h1>
+    <div>
+        <p>A simple para without parent size </p>
+        <p style="font-size: 1em;">A para with 1em
+            <p style="font-size: 1em;">A grand-child para with 1em</p>
+        </p>
+        <p style="font-size: 1.25em;">A para with 1.25em</p>
+        <p style="font-size: 1.5em; border: 2px solid brown;">A para with 1.5em
+            <p style="font-size: 1.5em;">A grand-child para with 1.5em</p>
+            <p style="font-size: 1.25em;">A grand-child para with 1.25em</p>
+            <p>A grand-child para without size whose parent size is 1.5em</p>
+
+        </p>
+    </div>
+    <div>
+        <p>A simple negative size para without parent size </p>
+        <p style="font-size: -1em;">A para with -1em</p>
+        <p style="font-size: -1.25em;">A para with -1.25em</p>
+        <p style="font-size: -1.5em;">A para with -1.5em</p>
+    </div>
+
+    <h1>rem without parent size</h1>
+    <div>
+        <p>A simple para without parent size </p>
+        <p style="font-size: 1rem;">A para with 1rem</p>
+        <p style="font-size: 1.25rem;">A para with 1.25rem</p>
+        <p style="font-size: 1.5rem;">A para with 1.5rem</p>
+    </div>
+    <h1>rem with parent size 20px</h1>
+    <div style="font-size: 20px;">
+        <p>A simple para with parent size 20px</p>
+        <p style="font-size: 1rem;">A para with 1rem</p>
+        <p style="font-size: 1.25rem;">A para with 1.25rem</p>
+        <p style="font-size: 1.5rem;">A para with 1.5rem</p>
+        <!-- <p style="font-size: 0.5em;">A para with 0.5em</p> -->
+    </div>
+    <h1>rem with parent size 30px</h1>
+    <div style="font-size: 30px; color: red;">
+        <p>A simple para with parent size 30px</p>
+        <p style="font-size: -1rem;">A para with -1rem</p>
+        <p style="font-size: -1.25rem;">A para with -1.25rem</p>
+        <p style="font-size: -1.5rem;">A para with -1.5rem</p>
+        <!-- <p style="font-size: 0.5em;">A para with 0.5em</p> -->
+    </div>
+    <div style="color: red;">
+        <h1>rem without parent size</h1>
+        <!-- <div style="font-size: 30px;">
+            <p>A simple para with parent size 30px</p> -->
+            <p style="font-size: -1rem;">A para with -1rem</p>
+            <p style="font-size: -1.25rem;">A para with -1.25rem</p>
+            <p style="font-size: -1.5rem;">A para with -1.5rem</p>
+            <p style="font-size: -1.5rem;">A paragraph</p>
+            <p>A paragraph</p>
+
+    </div>
+    <fieldset><h1 style="color: blue; font-style: italic;">Conclusion: rem size is depent on html root size and em size is depend on parent size and negative size won't be applied,it will take default size or parent size.</h1></fieldset>
+</body>
+</html>
