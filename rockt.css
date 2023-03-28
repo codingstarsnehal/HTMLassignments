@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+   
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* body{
+    position: relative;
+    background-color: skyblue;
+  height: 80%;
+} */
+
+.sky{
+    height: 100%;
+    background-color: skyblue;
+    position: relative;
+} 
+
+.cloud{
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+.cloud1{
+    height: 40%;
+    width: 20%;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.cloud2{
+    height: 30%;
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    left: 90%;
+}
+
+
+/* .ground{
+    background-color: rgba(160, 88, 46, 0.416);
+    position: relative;
+    box-sizing: border-box;
+} */
+
+.rocket{
+    height: 30%;
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    z-index: 5;
+    animation-name: rocket;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function:linear;
+    
+}
+
+@keyframes rocket{  
+    0%{bottom: -30%;}
+    0%{top: 100%; transform: translateY(-70%) rotateZ(0deg);}
+    10%{top: 90%; transform: translateY(-60%) rotateZ(0deg);}
+    20%{top: 80%; transform: translateY(-50%) rotateZ(0deg);}
+    30%{top: 75%; transform: translateY(-40%) rotateZ(0deg);}
+    40%{top: 70%; transform: translateY(-35%) rotateZ(0deg);}
+    50%{top: 60%; transform: translateX(-10%) rotateZ(-10deg);}
+    60%{top: 50%; transform: translateX(-20%) rotateZ(-20deg); }
+    70%{top: 40%; transform: translateX(-30%) rotateZ(-30deg);}
+    80%{top: 35%; transform: translateX(-40%) rotateZ(-35deg);}
+    90%{top: 30%; transform: translateX(-50%) rotateZ(-40deg);}
+    90%{top: 25%; transform: translateX(-60%) rotateZ(-45deg);}
+    90%{top: 20%; transform: translateX(-70%) rotateZ(-45deg);}
+    95%{top: 15%; transform: translateX(-80%) rotateZ(-50eg);}
+    100%{top: 10%; transform: translateX(-90%) rotateZ(-55deg);}
+
+}
+
+
+
+
