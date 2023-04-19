@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: #ffffff;
+    --color2: #cd9042;
+    --color3: rgb(215,214,214);
+
+    --bg-nav: #131921;
+    --bg-subnav: #232f3e;
+    --bg-body: #9abac3;
+}
+
+body{
+    background-color: #addae7;
+
+}
+
+.d-flex{
+    display: flex;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    width: 100%;
+    background-color: var(--bg-nav);
+    align-items: center;
+}
+nav .nav_brand a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    color: var(--color1);
+    font-weight: 400;
+}
+nav .nav_brand a img{
+    width: 100px;
+    margin: 20px 18px 0;
+}
+nav .nav_brand a #prime{
+    margin-top: 35px;
+    margin-left: -45px;
+}
+nav .nav_brand a span{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+
+
+nav .d-inline-block{
+    color: var(--color1);
+    font-size: small;
+    margin-left: 10px;
+}
+nav .d-inline-block  li i{
+    padding: 10px;
+}
+
+nav .addr a{
+    color: var(--color1);
+    padding: 10px;
+}
+
+/* start of search */
+nav .search{
+    flex: 1;
+}
+nav .search #allmenu{
+    border-radius: 5px 0px 0px 5px;
+}
+nav .search #allmenu option{
+    background-color: var(--bg-body);
+    color: var(--bg-nav);
+}
+nav .search input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
+nav .search .fa-magnifying-glass{
+    background-color: var(--color2);
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    /* align-items: center; */
+}
+
+/* country flag */
+nav .countryflag{
+    color: var(--color1);
+    margin-left: 10px;
+}
+
+nav .countryflag span{
+    margin-left: 10px;
+    font-weight: bold;
+} 
+
+nav .countryflag i{
+    margin-left: 5px;
+
+}
+/* nav .nav_menu{
+    justify-content: space-evenly;
+} */
+nav .nav_menu{
+    /* margin:0 10px; */
+    padding: 10px;
+}
+
+
+nav .nav_menu li{
+    margin-left: 10px;
+}
+nav .nav_menu li a{
+    color: var(--color1);
+    font-size: 12px;
+    
+}
+
+nav .nav_menu li a span{
+    font-size: 16px;
+    font-weight: bolder;
+
+}
+
+
